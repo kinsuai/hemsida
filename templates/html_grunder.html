@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grunderna i HTML</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+            font-size: 20px;
+        }
+        .wrapper{
+            width:90%;
+            margin:auto;
+        }
+        pre{ 
+            font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;  
+  font-size: 20px;
+  background-color: rgb(221, 247, 221);
+  border: 2px solid rgb(2, 109, 64);
+  text-align: left;
+  cursor: text;
+  padding: 10px 20px;
+  width: 100%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+ }
+ td{
+    text-align: center;
+ }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <h1>Grundläggande HTML</h1>
+    <p>Webbsidor är uppbyggda av sidbeskrivningsspråket HTML (HyperText Markup Language). Det innebär att utseende och innehåll styrs av att HTML-koden kan beskriva sidan på rätt sätt för din webbläsare . Olika webbläsare tolkar HTML-koden på olika sätt och dina webbsidor kan därför se olika ut på olika datorer - läs mer i guiden "webbläsare och säkerhet" »</p>
+    <h1>Visual Studio Code</h1>
+    <p>Visual Studio Code är en texteditor för Windows. Du har stor hjälp av programmets färgade kodsyntax och visning av radnummer. Visual Studio Code använder flikar för att hantera flera öppna dokument och visar färger på kodsyntax. Det innebär att du enklare kan se om du skriver fel när du programmerar och ändrar i dina koder. Du kan söka och ersätta kod, färger etc, och dessutom visas radnummer vilket är en stor fördel när du felsöker din kod.
+    Du kan ladda ner programmet via den här länken: <a href="https://code.visualstudio.com/download">Visual Studio Code download</a>
+    </p>
+    <img src="/img/vscode1.png" alt="">
+    <h2>HTML kodensstruktur</h2>
+    
+         <p> Innehållet som ska som ska synas på själva sidan skrivs inom (taggar - tags) som talar om vad som ska visas för webbläsaren (kallas också för "element"). De flesta taggar har en start-tagg och en slut-tagg.Taggarna är inte känsliga för stora och små bokstäver (Case sensitive) det går lika bra att skriva  </p>  
+          
+      <h2>Grundläggande HTML taggar</h2>
+    <p>
+        Skriv in följande kod. Var noga med att skriva exakt alla tecken i märkena. Om du missar ett tecken eller mellanslag kan webbläsaren tolka koden </p>
+        <pre>
+            <code>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang=  &quot;en&quot;&gt;
+                &lt;head &gt;
+                &lt;meta charset=&quot;UTF-8 &quot;&gt;
+                &lt;meta name= &quot;viewport &quot; content=&quot;width=device-width, initial-scale=1.0 &quot;>
+                &lt;title&gt;Min webbplats&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt; 
+                sidinnehåll &lt;/body&gt;
+                &lt;/html&gt;
+            </code>
+        </pre>    
+     
+    <h2>Stil & Färg</h2>
+    Bakgrundsfärg och andra egenskaper anges som en "stil" (style) och använder CSS (Cascading Style Sheet). När du är klar med HTML-grunderna bör du gå vidare och läsa guiderna om CSS »
+
+CSS-formatet anges inom märket tagg <code> &lt;STYLE &gt;</code> är formatet för varje märke anges inom block omslutna med måsvingar eller "krullparenteser" <strong>{ }</strong>
+
+Formatet anges med selektorer som anger vad som ska formateras. I vårt exempel är det <code> &lt;BODY &gt;</code>som är selektor och ska ha egenskapen för bakgrundsfärg. Selektorer och format anges inom kommentarsstecken <code>&lt;!--   --&gt;</code> 
+
+I exemplet nedan anges att <BODY> ska CSS-formateras för bakgrundsfärg:
+    <pre>
+        <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang=  &quot;en&quot;&gt;
+            &lt;head &gt;
+            &lt;meta charset=&quot;UTF-8 &quot;&gt;
+            &lt;meta name= &quot;viewport &quot; content=&quot;width=device-width, initial-scale=1.0 &quot;>
+            &lt;title&gt;Min webbplats &lt;/title&gt;
+            &lt;style type=&quot;text/css &quot;&gt;
+            &lt;!--
+                body {
+                background-color: #CFE7B8;
+                }
+                --&gt;
+                &lt;/style&gt;
+            &lt;/head&gt;
+            &lt;body&gt; 
+            Det här är min första webbsida! &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </pre>  
+    <p>Ange CSS-koden för bakgrundsfärgen och spara ditt dokument på nytt. Gå tillbaka till webbläsaren och använd webbläsarens "uppdaterings-knapp" (Reload/Refresh) eller snabbkommando <strong>F5:</strong></p>  
+    <img src="/img/htm4.gif" alt="">
+   
+    <h2>Färgnamn och Hexadecimala värden</h2>
+    <p>Färgerna anges normalt som Hexadecimala värden men ett urval av färger kan även anges med namn:</p>
+    <p>Färger med namn:</p>
+   <table border="1"width="900">
+    <tr>
+        <td style="background-color: black; color:white;">black</td>
+        <td bgcolor="silver">silver</td>
+        <td bgcolor="gray">gray</td>
+        <td bgcolor="white">white</td>
+       
+    </tr>
+    <tr>
+        <td style="background-color: maroon; color:white;">maroon</td>
+        <td bgcolor="red">red</td>
+        <td bgcolor="purple">purple</td>
+        <td bgcolor="fuchsia">fuchsia</td>
+    </tr>
+    <tr>
+        <td style="background-color: green; color:white;">green</td>
+        <td bgcolor="lime">lime</td>
+        <td bgcolor="olive">olive</td>
+        <td bgcolor="yellow">yellow</td>
+    </tr>
+    <tr>
+        <td style="background-color: navy; color:white;">navy</td>
+        <td bgcolor="blue">blue</td>
+        <td bgcolor="teal">teal</td>
+        <td bgcolor="aqua">aqua</td>
+    </tr>
+
+   </table>
+<p>Hexadecimala färger:</p>
+   <table border="1"width="900">
+    <tr>
+        <td style="background-color:black; color:white;">#000000</td>
+        <td style="background-color:#C0C0C0;">#C0C0C0</td>
+        <td style="background-color:#FFFF99;">#FFFF99</td>
+        <td style="background-color:#FF6666;">#FF6666</td>
+        <td style="background-color:#FF6633">#FF6633</td>
+        <td style="background-color:#FF3300">#FF3300</td>
+       
+    </tr>
+    <tr>
+        <td style="background-color:#CC66FF;">#CC66FF</td>
+        <td style="background-color:#CC66CC;">#CC66CC</td>
+        <td style="background-color:#CC6699;">#CC6699</td>      
+        <td style="background-color:#CC6666;">#CC6666</td>
+        <td style="background-color:#CC6633;">#CC6633</td>
+        <td style="background-color:#CC6600;">#CC6600</td>
+    </tr>
+    <tr>
+        <td style="background-color:#9900FF;">#9900FF</td>
+        <td style="background-color:#9900CC;">#9900CC</td>
+        <td style="background-color:#990099;">#990099</td>
+        <td style="background-color:#990066;">#990066</td>
+        <td style="background-color:#990033;">#9900336</td>
+        <td style="background-color:#990000;">#990000</td>
+      
+    </tr>
+    <tr>
+        <td style="background-color:#6666FF;">#6666FF</td>
+        <td style="background-color:#6666CC;">#6666CC</td>
+        <td style="background-color:#666699;">#666699</td>
+        <td style="background-color:#666666;">#666666</td>
+        <td style="background-color:#663333;">#663333</td>
+        <td style="background-color:#660000;">#660000</td>
+        
+    </tr>
+
+    <tr>
+        <td style="background-color:#00CCFF;">#00CCFF</td>
+        <td style="background-color:#00CCCC;">#00CCCC</td>
+        <td style="background-color:#00CC99;">#00CC99</td>
+        <td style="background-color:#00CC66;">#00CC66</td>
+        <td style="background-color:#00CC33;">#00CC33</td>
+        <td style="background-color:#00CC00;">#00CC00</td>
+      
+    </tr>
+
+   </table>
+    <h2>Video & Youtube iframes</h2>
+    <h2>Listor</h2>
+    <h2>DIV $ SPAN </h2>
+    <h2>INPUT</h2>
+</div>  
+</body>
+</html>

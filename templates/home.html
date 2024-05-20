@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JACOB OPANDE HEMSIDA</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+   <link rel="stylesheet" href="{{ url_for('static', filename='/css/home.css') }}">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg w-100 position-fixed">
+        <img src="{{ url_for('static', filename='/img/logos/Legitimerad Lärare-logos_black.png') }}" alt="" width="150">
+      <div class="container-fluid">
+     
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HEM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('static', filename='/css/home.css') }}">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">JAVASCRIPT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PROGRAMMERING</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                VECKOPLANERING
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Gränssnittsdesign 1</a></li>
+                <li><a class="dropdown-item" href="#">Webbutveckling 1</a></li>
+                <li><a class="dropdown-item" href="#">Webbutveckling 2</a></li>
+                <li><a class="dropdown-item" href="#">Webbserverprogrammering 1</a></li>
+                <li><a class="dropdown-item" href="#">Dator och Nätverksteknik</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Link</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="tumt"></div>
+    <div class="container">
+        <h2 class="pt-4 mb-5">VÄRMT VÄLKOMNA!. "VARJE ÖGONBLICK RÄKNAS" - SKAPA DIGITALA UPPLEVELSER MED ETT KLICK I TAGET.</h2>
+    </div>
+    <div class="published">
+	
+		<p id="date">
+			<span>Senast uppdaterad</span> <br>
+			<span>Oktober 15 2023</span>
+		</p>
+
+
+			<img alt="Jacob Opande" class="minbild" src={{url_for('static', filename='/img/minbild.jpg')}}>
+			<p id="author">
+				<span>Utvecklad av:</span><br>
+				<a href="">Jacob Opande</a>
+			</p>
+		
+	
+	</div>
+        <img src="{{url_for('static',filename='/img/autom.jpg')}}"  class="bild1"  alt="">
+
+        <div class="container">
+            <br />
+            <hr>
+            <br />
+      <h2 class="pt-4">VAD ÄR WEBBUTVECKLING?</h2>
+      <p class="ett">
+        Webbutveckling är den process som används för att bygga, skapa och
+        underhålla en webbplats. Det gäller allt från en enkel webbsida med
+        vanlig text till en komplex webb- eller sociala nätverksapplikation.
+      </p>
+      <br />
+      <hr>
+      <br />
+      <p>Här är några olika typer av webbutveckling:</p>
+      <ul>
+        <li>
+          <strong>Front-end-utveckling:</strong> Front-end-utveckling innebär
+          att skapa användargränssnittet med HTML, CSS och JavaScript så att
+          användare kan se och interagera med webbplatsen.
+        </li>
+        <li>
+          <strong>Back-end-utveckling:</strong> Back-end-utveckling innebär att
+          skapa programvara på serversidan, som fokuserar på allt du inte kan se
+          på en webbplats. Back-end-utvecklare säkerställer att webbplatsen
+          fungerar korrekt, med fokus på databaser, back-end-logik,
+          applikationsprogrammeringsgränssnitt (API), arkitektur och servrar.
+        </li>
+        <li>
+          <strong>Full-stack-utveckling:</strong> Full-stack-utveckling innebär
+          att skapa både front-end- och back-end-delen av webbapplikationen.
+        </li>
+        <li>
+          <strong>Webb App-utveckling:</strong> Processen som används för att
+          bygga, skapa och underhålla en webbplats.
+        </li>
+        <li>
+          <strong>Desktop App-utveckling:</strong> Desktop-utveckling innebär att
+          bygga, skapa och underhålla en webbplats som fungerar på datorer. Den
+          fokuserar på att utveckla applikationer för de tre mest populära
+          operativsystemen: Windows, Linux och macOS.
+        </li>
+        <li>
+          <strong>Mobil App-utveckling:</strong> Mobil utveckling innebär att bygga,
+          skapa och underhålla en webbplats som fungerar på mobila enheter.
+        </li>
+        <li>
+          <strong>Spelutveckling:</strong> Spelutveckling är konsten att designa och skapa spel 
+          för stationära datorer, webbplatser och mobila enheter.
+        </li>
+        <li>
+          <strong>Inbäddad App-utveckling:</strong> Inbäddad App-utveckling innebär att
+          skapa applikationer med hjälp av programmeringsspråk som C och C++ för
+          medicinsk utrustning, drönare, flygkontroller, etc.
+        </li>
+      </ul>
+      <br />
+      <hr>
+      <br />
+      <h2> DE FEM STEGEN I EN WEBBUTVECKLINGSPROCESS</h2>
+      <br />
+      <p>
+        <strong>STEG 1:</strong> <br />Skapa en design Skapandeprocessen är den roligaste delen. Det
+        kan bli en första diskussion med kunden om färgscheman, funktion,
+        specialfunktioner (som e-handel), grafik, filmer och webbplatsens
+        övergripande utseende. Det kreativa teamet rekommenderar alltid kunden
+        att ta med ett par exempel på webbplatser som de tycker om till mötet.
+        Efter det mötet lägger det kreativa teamet lite tid på att göra en
+        2D-rendering av visionen. <br /><br />
+        <strong>STEG 2:</strong> <br />Granska Efter att teamet har ägnat tid åt att tänka på designen
+        är det dags att demonstrera webbplatsen för kunden. Demonstrationen sker
+        vanligtvis personligen. Under denna tid uppstår ytterligare diskussioner
+        om layout, färger och andra detaljer. Fler möten kommer sannolikt att
+        följa eftersom input från kunden nästan säkert leder till ändringar.
+        <br /><br />
+
+        <strong>STEG 3:</strong> <br />Utveckling Det är dags att skicka webbplatsen till utvecklaren
+        nu när designen är godkänd. Utvecklaren börjar bygga webbplatsen på en
+        produktionsserver så att klienten kan se den online utan att göra den
+        offentlig. Det kreativa teamet använder normalt denna tid för att arbeta
+        med en copywriter och andra företagsteam för att slutföra rösten,
+        innehållet och grafiken på webbplatsen. Steget är vanligtvis den mest
+        tidskrävande delen av proceduren, men det är också det mest avgörande!
+        <br /><br />
+        <strong>STEG 4:</strong> <br />Testning Efter att utvecklaren har avslutat kodningen och
+        klienten har bestämt sig för allt innehåll, är det dags att testa den
+        nya webbplatsen på testservern. Kunden skickas en URL till webbplatsen
+        som de kan dela med sina kollegor och andra beslutsfattare. Innan du
+        slutför webbplatsen kan klienten göra några ändringar.
+        <br /><br />
+        <strong>STEG 5:</strong> <br />Starta Äntligen är den nya hemsidan redo att gå live!
+        Utvecklaren kommer att påbörja lanseringsproceduren efter att kunden har
+        gett sitt godkännande. Det här steget inkluderar att köpa domänen och
+        ställa in värd för webbplatsen. Förökningen kommer också att ta lite
+        tid.
+      </p>
+      <br />
+      <hr>
+      <br />
+      <h2>VAD BEHÖVER JAG LÄRA MIG FÖR ATT BLI EN WEBBUTVECKLARE?</h2>
+      <p>
+        Du bör vara bekant med HTML, CSS och JavaScript om du vill arbeta som
+        webbutvecklare. Att fräscha upp dina kunskaper om CSS och CSS-ramverk är
+        en bra idé. Dessa grundläggande webbutvecklingsförmågor ger dig grunden
+        och resonemang som krävs för att kommunicera med datorspråk. I sex steg
+        kan du lära dig hur du blir webbutvecklare:
+      </p>
+      <ul>
+        <li>Lär dig grunderna i webbutveckling.</li>
+        <li>Utveckla din specialitet.</li>
+        <li>Lär dig några relevanta programmeringsspråk.</li>
+        <li>Utveckla dina färdigheter genom att arbeta med projekt.</li>
+        <li>Skapa en portfölj av ditt arbete.</li>
+        <li>Lär dig grundläggande principer för UI- och UX-design.</li>
+      </ul>
+      <br />
+      <hr>
+      <br />
+      <h2>VAD ÄR EN WEBBUTVECKLARE'S ANSVAR?</h2>
+      <p>Vissa webbutvecklare ansvarsområden kan inkludera:</p>
+     <ul>
+        <li>Skapa en prototyp för nya applikationer med hjälp av programmeringsspråk som JavaScript eller PHP.</li>
+        <li> Designa komponenterna i applikationernas arkitektur, välj de bästa teknikerna och språken för projektet, testsajter och applikationer i olika webbläsare och miljöer.</li>
+        <li> Problemlösning.</li>
+        <li>Fixa projektbuggar.</li>
+        <li>Testa nya funktioner för att verifiera korrekt funktionalitet.</li>
+        <li> Testa prestandabenchmarking.</li>
+        <li>Granska och testa dina medarbetares kod.</li>
+        <li>Bygg applikationsprogramgränssnitt (API) för programmerare som utbyter data, införlivar projekt med öppen källkod och bidrar till dem.</li>
+        <li> Träffa designers, utvecklare och projektanställda för att få uppdateringar om projektens framsteg.</li>
+        <li>  Få information från kunder och konsumenter.</li>
+        <li> Håll dig uppdaterad om ny teknik, ramverk och språk.</li>
+        <li> Håll dig uppdaterad med de senaste webbutvecklingstrenderna och innovationerna.</li>
+        <li> Skapande och underhåll av databas.</li>
+        <li>Använd kodning och kommentarer med bästa praxis så att andra utvecklare som senare arbetar med ditt projekt kan förstå din kod.</li>
+        <li>Designa informationsarkitektur för applikationen eller webbplatsen.</li>
+        <li> Delta i och tala vid webbutvecklingskonferenser och workshops.</li>
+      
+        </ul>
+        <br /><br />
+        <hr>
+        <br />
+        <h2>VILKA ÄR FÖRDELARNA MED ATT LÄRA WEBBUTVECKLING?</h2>
+        <ul>
+            <li>Det finns många webbutvecklingsjobb tillgängliga.</li>
+            <li>Bra löner.</li>
+            <li>Du kan arbeta på distans, d.v.s. var som helst.</li>
+            <li>Du kan arbeta på ett banbrytande teknikföretag som Google, Microsoft, Meta, etc.</li>
+            <li>Det finns många möjligheter för frilansare.</li>
+            <li>Arbetet är kreativt och roligt.</li>
+        </ul>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
